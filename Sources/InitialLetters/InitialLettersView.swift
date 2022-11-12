@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct InitialLettersView: View {
+public struct InitialLettersView: View {
     
     @State var size : CGFloat
     @State var letter : String
@@ -22,7 +22,7 @@ struct InitialLettersView: View {
         let lum = 0.2126 * rRed + 0.7152 * rGreen + 0.0722 * rBlue
         return lum < 0.5
     }
-    var body: some View {
+    public var body: some View {
         ZStack {
             Circle()
                 .frame(width: size, height: size, alignment: .center)
