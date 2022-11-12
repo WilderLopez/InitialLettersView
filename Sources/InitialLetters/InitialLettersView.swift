@@ -18,6 +18,11 @@ public struct InitialLettersView: View {
     var rGreen  = Double.random(in: 0...1)
     var rAlpha  = Double.random(in: 0...1)
     
+    public init(size: CGFloat, letter: String){
+        self.size = size
+        self.letter = letter
+    }
+    
     var isDark : Bool {
         let lum = 0.2126 * rRed + 0.7152 * rGreen + 0.0722 * rBlue
         return lum < 0.5
